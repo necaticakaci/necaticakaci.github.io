@@ -1,0 +1,13 @@
+{{- if (eq (.Site.Params.disableComments | default false) false) -}}
+    {{- if (eq (.Params.disableComments | default false) false) -}}
+        <script src="https://utteranc.es/client.js"
+            repo="necaticakaci/comments"
+            issue-term="pathname"
+            theme="gruvbox-dark"
+            crossorigin="anonymous"
+            async>
+        </script>
+    {{- end -}}
+{{- end -}}
+<p class="copyright">{{ .Site.Copyright }}</p>
+<p class="advertisement">Bu site <a href="https://gohugo.io/">hugo</a> ve <a href="https://github.com/joeroe/risotto">risotto</a> ile hazırlanmıştır.</p>

@@ -1,0 +1,6 @@
+---
+title: "Yazılar"
+disableComments: true
+---
+
+---

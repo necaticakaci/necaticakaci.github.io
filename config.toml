@@ -1,0 +1,146 @@
+baseURL = "https://necaticakaci.github.io"
+languageCode = "tr-tr"
+title = "necaticakaci"
+theme = "risotto"
+author = "Necati Çakacı"
+copyright = "© 2023 Necati Çakacı"
+paginate = 3
+DefaultContentLanguage = "tr"
+enableInlineShortcodes = true
+enableEmoji = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+
+[params.theme]
+palette = "gruvbox-dark"
+mode = "dark-mode"
+
+# Sidebar: about/bio
+[params.about]
+title = "Necati Çakacı"
+description = "Elektronik, bilgisayar ve diğerlerinden hikayeler."
+# logo = "images/rice.svg"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 5 <https://fontawesome.com/> ('fas fa-' or 'fab-fa' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/necaticakaci"
+
+[[params.socialLinks]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/necati-%C3%A7akac%C4%B1/"
+
+[[params.socialLinks]]
+icon = "fas fa-envelope"
+title = "E-posta"
+url = "/mail"
+
+# [[params.socialLinks]]
+# icon = "far fa-folder-open"
+# title = "Kategoriler"
+# url = "/categories"
+# 
+# [[params.socialLinks]]
+# icon = "fas fa-hashtag"
+# title = "Etiketler"
+# url = "/tags"
+
+[[params.socialLinks]]
+icon = "fas fa-rss"
+title = "RSS Beslemeleri"
+url = "/index.xml"
+
+# [[params.socialLinks]]
+# icon = "ai ai-orcid"
+# title = "ORCID"
+# url = ""
+
+disableComments=false
+
+[menu]
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "Yazılar"
+  url = "/posts"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "konular"
+  name = "Konular"
+  url = "/topics"
+  weight = 11
+
+  [[menu.main]]
+  identifier = "belgeler"
+  name = "Belgeler"
+  url = "/documents"
+  weight = 12
+
+  [[menu.main]]
+  identifier = "projeler"
+  name = "Projeler"
+  url = "/projects"
+  weight = 13
+
+  [[menu.main]]
+  identifier = "hakkımda"
+  name = "Hakkımda"
+  url = "/about"
+  weight = 14
+
+# [taxonomies]
+# category = "categories"
+# tag = "tags"
+# series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+# pygmentsUseClasses = false
+# 
+# [markup]
+#   [markup.highlight]
+#     codeFences = true
+#     noClasses = true
+#     style = 'gruvbox'
