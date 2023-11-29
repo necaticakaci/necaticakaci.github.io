@@ -6,5 +6,5 @@ disableComments: true
 ---
 
 <p align="center">
-  <img src="/mail.png"/>
+   <img src="/mail.png"/>
 </p>
