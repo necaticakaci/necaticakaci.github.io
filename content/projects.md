@@ -13,8 +13,8 @@ disableComments: true
 
 Matrak, Verilog ile yazılmış basit bir 32-bit RISC-V işlemcidir. Detaylı işlemci tasarım rehberi hazırlamak amacıyla geliştirilmiştir.
 
-* [Matrak Github Repo](https://github.com/necaticakaci/matrak)
-* [RISC-V İşlemci Tasarımı Yazı Dizisi](/riscv-1)
+* [Matrak GitHub Repo](https://github.com/necaticakaci/matrak)
+* [RISC-V İşlemci Tasarımı Yazı Dizisi](/posts/riscv-1)
 
 </details>
 
@@ -29,7 +29,7 @@ Matrak, Verilog ile yazılmış basit bir 32-bit RISC-V işlemcidir. Detaylı i�
 
 VHDL ile Picoblaze benzeri 8-bit işlemci tasarımı.
 
-* [Manta C211 Github Repo](https://github.com/necaticakaci/manta-c211)
+* [Manta C211 GitHub Repo](https://github.com/necaticakaci/manta-c211)
 * [MANTASM](https://github.com/necaticakaci/manta-c211/blob/main/mantasm/mantasm.py): Manta C211 işlemci için assembler
 
 </details>
