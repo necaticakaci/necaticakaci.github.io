@@ -935,3 +935,5 @@ Matrak işlemcimiz henüz dört başı mamur olmaktan çok uzak ancak artık tar
 </p>
 
 Bu yazılık bu kadar\.\.\.
+
+> :scroll: Bu bölümün kodlarına erişmek için [tıklayın](https://github.com/necaticakaci/matrak/tree/main/episodes/ep1).
