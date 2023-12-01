@@ -2514,3 +2514,16 @@ UART çalışıyor gibi görünüyor.
 Daha yapılacak çok iş var ama şimdilik bitti.
 
 > :scroll: Bu bölümün kodlarına erişmek için [tıklayın](https://github.com/necaticakaci/matrak/tree/main/episodes/ep5/nexysa7).
+
+---
+
+## Kaynaklar
+
+* [RISC-V Unprivileged Specification](https://github.com/riscv/riscv-isa-manual/releases/tag/Ratified-IMAFDQC)
+* [Digital Design and Computer Architecture: RISC-V Edition](https://pages.hmc.edu/harris/ddca/)
+* [RISC-V Kopya Kağıdı](https://github.com/jameslzhu/riscv-card/blob/master/riscv-card.pdf)
+* [Bilgisayar Mimarsi Dersleri, Oğuz Ergin](https://www.youtube.com/playlist?list=PLvNq8wrSYGAU6CF4UleG6HbXa9paQDsLK)
+* [VHDL ve FPGA Dersleri, Mehmet Burak Aykenar](https://github.com/mbaykenar/apis_anatolia/)
+* [learn-fpga, Bruno Levy](https://github.com/BrunoLevy/learn-fpga/)
+* [mystic_riscv64, Muhammed Kocaoğlu](https://github.com/muhammedkocaoglu/mystic_riscv64/)
+* [riscv-simple-sv](https://github.com/tilk/riscv-simple-sv)
