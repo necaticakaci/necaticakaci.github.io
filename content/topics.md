@@ -14,5 +14,6 @@ disableComments: true
 * [RISC-V İşlemci Tasarımı - Bölüm 3: Atlama Buyrukları ve U-type Buyruklar](/posts/riscv-3)
 * [RISC-V İşlemci Tasarımı - Bölüm 4: Load ve Store Buyrukları](/posts/riscv-4)
 * [RISC-V İşlemci Tasarımı - Bölüm 5: Çevrebirimler ve C Kütüphanesi](/posts/riscv-5)
+* [RISC-V İşlemci Tasarımı - Bölüm 6: Açık Kaynaklı Yonga Serim Akışı](/posts/riscv-6)
 
 </details>
