@@ -3,7 +3,7 @@ languageCode = "tr-tr"
 title = "necaticakaci"
 theme = "risotto"
 author = "Necati Çakacı"
-copyright = "© 2023 Necati Çakacı"
+copyright = "© 2024 Necati Çakacı"
 paginate = 3
 DefaultContentLanguage = "tr"
 enableInlineShortcodes = true
@@ -40,7 +40,7 @@ url = "https://github.com/necaticakaci"
 [[params.socialLinks]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
-url = "https://www.linkedin.com/in/necati-%C3%A7akac%C4%B1/"
+url = "https://www.linkedin.com/in/necati-%C3%A7akac%C4%B1"
 
 [[params.socialLinks]]
 icon = "fas fa-envelope"
