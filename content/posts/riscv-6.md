@@ -236,3 +236,5 @@ cells[0].write_svg(file_name_out)
 </p>
 
 Matrak çekirdeğini OpenLane akışından geçirdik. Fakat tasarımda henüz bellek ve çevrebirimleri yer almadığı için "işlemci" yongamızı tamamlamış sayılmıyoruz.
+
+> :scroll: Bu bölümün kodlarına erişmek için [tıklayın](https://github.com/necaticakaci/matrak/tree/main/episodes/ep6).
