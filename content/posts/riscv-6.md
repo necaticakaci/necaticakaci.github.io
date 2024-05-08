@@ -194,7 +194,7 @@ Synth cell count        = 7319
 Total cells             = 20887
 ```
 
-Serim çıktılarını incelemek için OpenRoad GUI'yi kullanabiliriz. Bunun için konteynırın içinde <code>python3 gui.py --viewer openroad ./designs/matrak/runs/first_run/</code> komutunu vermeliyiz.
+Serim çıktılarını incelemek için OpenRoad GUI'yi kullanabiliriz. Bunun için konteynırın içinde <code>python3 gui.py -\-viewer openroad ./designs/matrak/runs/first_run/</code> komutunu vermeliyiz.
 
 <p align="center">
   <img src="/matrak-openroad-gui.png"/>
