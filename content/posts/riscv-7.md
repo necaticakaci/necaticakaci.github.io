@@ -7,7 +7,7 @@ math: true
 
 Bu bölüme kadar FPGA akışında Xilinx Vivado yazılımını kullanmıştık. Fakat Xilinx FPGA kartlarının maliyeti, öğrencilerin ve hobicilerin bu iş için ayıracağı bütçeyi aşabilir. Bu noktada FPGA çalışmalarına giriş yapabileceğimiz uygun maliyetli kartlara ihtiyaç duyuyoruz. Yakın döneme kadar birkaç üreticinin tekelinde bulunan FPGA pazarında, son dönemde bir çok küçük çaplı üreticileri görmeye başladık. Bu sayede büyük üreticilerin neredeyse CPLD kartlarının fiyatlarında giriş seviyesi FPGA kartları piyasaya sürülmüş oldu. Gowin de bu girişimlerden biri olan Çin menşeili bir FPGA yongası üreticisi. Gowin FPGA'lara Sipeed Tang Nano serisi kartlarda rastlıyoruz. Tang Nano FPGA kartları nispeten uygun maliyetli ve -bu yazı yazıldığı esnada- ülkemiz üzerinden de temin edilebiliyor. Ayrıca Tang Nano kartları açık kaynaklı araçları destekliyor. Tabii ki Gowin FPGA'ların da sahipli (ücretsiz lisanslı) IDE'leri var, ancak biz bu yazıda açık kaynaklı araçlar üzerinde duracağız.
 
-:pushpin: Açık kaynaklı FPGA araçlarının üretici tarafından resmi olarak desteklenmediğini belirtelim. Bu durum bazı uyumsuzluklar ve sorunlar yaşayabileceğimiz anlamına gelebilir.
+> :pushpin: Açık kaynaklı FPGA araçlarının üretici tarafından resmi olarak desteklenmediğini belirtelim. Bu durum bazı uyumsuzluklar ve sorunlar yaşayabileceğimiz anlamına gelebilir.
 
 Tang Nano FPGA geliştirme kartlarının 1K, 4K, 9K ve 20K gibi bir çok versiyonu var. Ben Matrak işlemcimizi çalıştırmak için Tang Nano 9K kartını temin ettim. 9K ibaresi kartta yer alan FPGA'nın 8640 LUT4 (Look Up Table) içerdiğine atıf yapıyor. Eğer elinizde 20K versiyonu mevcutsa muhtemelen küçük değişikliklerle bu projeyi çalıştırabilirsiniz.
 
@@ -538,6 +538,8 @@ SECTIONS
 ```
 
 Bellek boyutumuzun kısıtlı olması sebebiyle kütüphanemizi de sadece çıkış ve saat sayacı çevrebirimlerini destekleyecek şekilde kırpıyoruz.
+
+matrak.h:
 
 ```c
 // Matrak Çevrebirim Kütüphanesi
