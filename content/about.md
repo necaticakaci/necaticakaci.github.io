@@ -6,7 +6,7 @@ disableComments: true
 
 ---
 
-Merhaba, ben Necati ÇAKACI. Yüksek lisans öğrencisi ve elektrik-elektronik mühendisiyim. Sayısal tasarım ve bilgisayar mimarileri üzerinde çalışmalar yapıyorum.
+Merhaba, ben Necati Çakacı. Elektrik-Elektronik yüksek mühendisiyim. Sayısal tasarım ve bilgisayar mimarileri üzerinde çalışmalar yapıyorum.
 
 Bana ulaşın:
 
