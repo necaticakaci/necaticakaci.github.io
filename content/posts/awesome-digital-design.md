@@ -30,7 +30,7 @@ Bu listede yer alması gerektiğini düşündüğünüz başka projeler varsa yo
 * [CVW](https://github.com/openhwgroup/cvw) - RISC-V System-on-Chip Design kitabında anlatılan işlemci
 * [CVA6](https://github.com/openhwgroup/cva6) - OpenHW Group tarafından geliştirilen 6 aşama boru hatlı işlemci
 * [VeeR](https://github.com/chipsalliance/Cores-VeeR-EH2) - Western Digital'in RISC-V işlemci tasarımı (Eski adı: SweRV)
-* [Toooba](https://github.com/bluespec/Toooba) - MIT tarafından geliştirilen sırasız yürütüm yapan işlemci
+* [Toooba](https://github.com/bluespec/Toooba) - Bluespec ile geliştirilmiş sırasız yürütüm yapan işlemci
 * [BOOM](https://github.com/riscv-boom/riscv-boom) - Berkeley tarafından geliştirilen sırasız yürütüm yapan işlemci
 * [XiangShan](https://github.com/OpenXiangShan/XiangShan) - Çin menşeili yüksek performanslı işlemci
 
