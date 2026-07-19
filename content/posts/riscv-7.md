@@ -42,7 +42,7 @@ FPGA'yı harici programlayıcıya ihtiyaç duymadan USB-C üzerinden programlaya
   Soldan sağa; Arduino Nano, Deneyap Mini, Raspberry Pi Pico, Tang Nano 9K
 </p>
 
-Gowin FPGA'ları kullanmak için açık kaynaklı sentez ve place and route araçlarını bilgisyarımıza kuracağız. Kurulum işlemi, tıpkı [5. bölümde](/posts/riscv-5) değindiğimiz RISC-V Toolchain paketinin kurulumu gibi derleme gerektiriyor. Eğer uğraşmak istemezseniz derlenmiş araçların bulunduğu [oss-cad-suite](https://github.com/YosysHQ/oss-cad-suite-build) paketini indirebilirsiniz. Paketi arşivden çıkarttıktan sonra dizini (<code>kurulum_dizini/oss-cad-suite/bin</code>) Path'e eklemeyi unutmayın.
+Gowin FPGA'ları kullanmak için açık kaynaklı sentez ve place and route araçlarını bilgisyarımıza kuracağız. Kurulum işlemi, tıpkı [5. bölümde](/posts/riscv-5/) değindiğimiz RISC-V Toolchain paketinin kurulumu gibi derleme gerektiriyor. Eğer uğraşmak istemezseniz derlenmiş araçların bulunduğu [oss-cad-suite](https://github.com/YosysHQ/oss-cad-suite-build) paketini indirebilirsiniz. Paketi arşivden çıkarttıktan sonra dizini (<code>kurulum_dizini/oss-cad-suite/bin</code>) Path'e eklemeyi unutmayın.
 
 Eğer sadece ihtiyacımız olanları derleyerek kurmayı tercih edersek; [Yosys](https://github.com/yosyshq/yosys), [nextpnr-gowin](https://github.com/YosysHQ/nextpnr#nextpnr-himbaechel), [OpenFPGALoader](https://github.com/trabucayre/openFPGALoader) araçlarına ihtiyacımız olacak. Ben daha pratik olacağı için önceden derlenmiş paketi tercih ettim.
 

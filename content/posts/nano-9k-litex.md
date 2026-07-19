@@ -7,7 +7,7 @@ math: true
 
 FPGA ile çalışırken bazı durumlarda tasarımımızın içine işlemci gömmek isteyebiliriz. FPGA içine herhangi bir RTL tasarım gibi gömülebilen ve FPGA'nın lojik kaynaklarını kullanan işlemcilere "soft-core" denir. Soft-core işlemciler, genelde ihtiyaçlara göre özelleştirilebilir yapıda olurlar. FPGA ile yapılan tasarımlarda sıklıkla kullanıldıklarından birçok FPGA üreticisinin kendi soft-core işlemci IP'leri bulunmaktadır. AMD için Microblaze ve Altera için Nios işlemcilerini örnek olarak verebiliriz. Açık kaynak tarafına baktığımızda ise çeşitli mimarilerde çok sayıda işlemci projesinin olduğunu görüyoruz. Fakat bu projelerin büyük kısmı FPGA üreticilerinin sunduğu çevrebirim ve mikromimari özelleştirme kabiliyetlerinden yoksunlar. Litex projesi, barındırdığı çeşitli açık kaynaklı çevrebirim ve işlemci çekirdekleriyle özelleştirilebilir bir SoC oluşturmaya imkan sağlıyor.
 
-Bu yazıda Tang Nano 9K FPGA için Litex ekosisteminden bir SoC üretip çalıştırmaya değineceğiz. Bunu [RISC-V İşlemci Tasarımı - Bölüm 7: Açık Kaynaklı FPGA Akışı](/posts/riscv-7) bölümünde de kullandığımız Yosys/Apicula araçlarıyla gerçekleştireceğiz.
+Bu yazıda Tang Nano 9K FPGA için Litex ekosisteminden bir SoC üretip çalıştırmaya değineceğiz. Bunu [RISC-V İşlemci Tasarımı - Bölüm 7: Açık Kaynaklı FPGA Akışı](/posts/riscv-7/) bölümünde de kullandığımız Yosys/Apicula araçlarıyla gerçekleştireceğiz.
 
 ## Litex ile SoC Üretimi
 

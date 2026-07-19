@@ -12,7 +12,7 @@ Bana ulaşın:
 
 * <i class="fab fa-github" aria-hidden="true"></i> [GitHub](https://github.com/necaticakaci)
 * <i class="fab fa-linkedin" aria-hidden="true"></i> [Linkedin](https://www.linkedin.com/in/necati-%C3%A7akac%C4%B1/)
-* <i class="fas fa-envelope" aria-hidden="true"></i> [E-posta](/mail)
+* <i class="fas fa-envelope" aria-hidden="true"></i> [E-posta](/mail/)
 
 Bu blogta aşağıdaki teknolojiler kullanılmaktadır:
 

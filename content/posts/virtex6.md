@@ -87,7 +87,7 @@ Kurulum tamamlandığına göre sırada bir proje oluşturup karta yüklemek var
 
 ## Proje Oluşturma
 
-Örnek proje olarak daha önce Nexys A7 ve Tang Nano 9k kartlarında da denediğimiz [Matrak](/posts/riscv-1) RISC-V işlemciyi kullanacağız. ISE üzerinde "New Project" butonuna basıyoruz. Ardından bizi proje oluşturma sihirbazı karşılıyor. Burada projenin adını ve dizinini seçiyoruz. Bu noktada projeyi, ana makine ile paylaşımlı klasörde açmak mantıklı olacaktır.
+Örnek proje olarak daha önce Nexys A7 ve Tang Nano 9k kartlarında da denediğimiz [Matrak](/posts/riscv-1/) RISC-V işlemciyi kullanacağız. ISE üzerinde "New Project" butonuna basıyoruz. Ardından bizi proje oluşturma sihirbazı karşılıyor. Burada projenin adını ve dizinini seçiyoruz. Bu noktada projeyi, ana makine ile paylaşımlı klasörde açmak mantıklı olacaktır.
 
 <p align="center">
   <img src="/new_project_wiz.png"/>
@@ -99,7 +99,7 @@ Sonraki ekranda kullanılacak FPGA platformununu seçmemiz isteniyor. Bizim kart
   <img src="/fpga_specs.png"/>
 </p>
 
-Projeyi oluşturma adımları tamamlandı. Şimdi yeni oluşturduğumuz projeye kaynak dosyalarını ekleyeceğiz. Test edeceğimiz proje bir RISC-V işlemcili sistem içeriyor. Detaylarını incelemek isterseniz [önceki yazılara](/posts) göz atabilirsiniz. Kaynak dosyaları projeye eklemek için "Add Source" kısmına tıklamak yeterli. Proje kodları aşağıdadır.
+Projeyi oluşturma adımları tamamlandı. Şimdi yeni oluşturduğumuz projeye kaynak dosyalarını ekleyeceğiz. Test edeceğimiz proje bir RISC-V işlemcili sistem içeriyor. Detaylarını incelemek isterseniz [önceki yazılara](/posts/) göz atabilirsiniz. Kaynak dosyaları projeye eklemek için "Add Source" kısmına tıklamak yeterli. Proje kodları aşağıdadır.
 
 <details>
 <summary>matrak.v: <mark>kodu göstermek için tıklayın</mark></summary>

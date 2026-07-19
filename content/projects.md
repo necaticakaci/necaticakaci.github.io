@@ -29,7 +29,7 @@ Mihenk, gömülü sistemler için kolay taşınabilir ve standart kütüphane ge
 Matrak, Verilog ile yazılmış basit bir 32-bit RISC-V işlemcidir. Detaylı işlemci tasarım rehberi hazırlamak amacıyla geliştirilmiştir.
 
 * [Matrak GitHub](https://github.com/necaticakaci/matrak)
-* [RISC-V İşlemci Tasarımı Yazı Dizisi](/posts/riscv-1)
+* [RISC-V İşlemci Tasarımı Yazı Dizisi](/posts/riscv-1/)
 
 ---
 

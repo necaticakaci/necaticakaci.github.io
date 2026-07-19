@@ -1,4 +1,4 @@
-baseURL = "https://necaticakaci.github.io"
+baseURL = "https://necaticakaci.github.io/"
 languageCode = "tr-tr"
 title = "necaticakaci"
 theme = "risotto"
@@ -8,12 +8,18 @@ paginate = 3
 DefaultContentLanguage = "tr"
 enableInlineShortcodes = true
 enableEmoji = true
+
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
 
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.8
 
 [params]
 
@@ -45,17 +51,17 @@ url = "https://www.linkedin.com/in/necati-%C3%A7akac%C4%B1"
 [[params.socialLinks]]
 icon = "fas fa-envelope"
 title = "E-posta"
-url = "/mail"
+url = "/mail/"
 
 # [[params.socialLinks]]
 # icon = "far fa-folder-open"
 # title = "Kategoriler"
-# url = "/categories"
+# url = "/categories/"
 # 
 # [[params.socialLinks]]
 # icon = "fas fa-hashtag"
 # title = "Etiketler"
-# url = "/tags"
+# url = "/tags/"
 
 [[params.socialLinks]]
 icon = "fas fa-rss"
@@ -74,31 +80,31 @@ disableComments=false
   [[menu.main]]
   identifier = "posts"
   name = "Yazılar"
-  url = "/posts"
+  url = "/posts/"
   weight = 10
 
   [[menu.main]]
   identifier = "konular"
   name = "Konular"
-  url = "/topics"
+  url = "/topics/"
   weight = 11
 
   [[menu.main]]
   identifier = "belgeler"
   name = "Belgeler"
-  url = "/documents"
+  url = "/documents/"
   weight = 12
 
   [[menu.main]]
   identifier = "projeler"
   name = "Projeler"
-  url = "/projects"
+  url = "/projects/"
   weight = 13
 
   [[menu.main]]
   identifier = "hakkımda"
   name = "Hakkımda"
-  url = "/about"
+  url = "/about/"
   weight = 14
 
 # [taxonomies]

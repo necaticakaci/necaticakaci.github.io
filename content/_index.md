@@ -8,12 +8,12 @@ disableComments: true
 
 Hoşgeldiniz.
 
-:black_nib: ./[yazılar](/posts)
+:black_nib: ./[yazılar](/posts/)
 
-:hash: ./[konular](/topics)
+:hash: ./[konular](/topics/)
 
-:green_book: ./[belgeler](/documents)
+:green_book: ./[belgeler](/documents/)
 
-:rocket: ./[projeler](/projects)
+:rocket: ./[projeler](/projects/)
 
-:bust_in_silhouette: ./[hakkımda](/about)
+:bust_in_silhouette: ./[hakkımda](/about/)
