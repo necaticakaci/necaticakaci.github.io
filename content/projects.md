@@ -6,6 +6,14 @@ disableComments: true
 
 ---
 
+## n6502
+
+<p></p>
+
+n6502, MOS 6502 komut setini destekleyen küçük bir işlemcidir.
+
+* [n6502 GitHub](https://github.com/necaticakaci/n6502)
+
 ## Mihenk
 
 <p></p>
