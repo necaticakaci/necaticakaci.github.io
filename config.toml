@@ -106,9 +106,17 @@ disableComments=false
 # tag = "tags"
 # series = "series"
 
-# For hugo >= 0.60.0, enable inline HTML
-[markup.goldmark.renderer]
-unsafe = true
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = "gruvbox-dark"
+    tabWidth = 4
 
 [privacy]
 
@@ -136,11 +144,3 @@ unsafe = true
 
   [services.twitter]
     disableInlineCSS = true
-
-# pygmentsUseClasses = false
-# 
-# [markup]
-#   [markup.highlight]
-#     codeFences = true
-#     noClasses = true
-#     style = 'gruvbox'

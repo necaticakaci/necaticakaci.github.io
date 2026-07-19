@@ -1,24 +1,26 @@
 /* Fonts */
 :root {
-    --font-monospace: "Fira Mono", monospace;
+    --font-monospace: "IBM Plex Mono", monospace;
 }
 
 body {
     font-family: var(--font-monospace);
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5rem;
 }
 
 /* Headings */
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     font-size: 1rem;
-    margin: 1.5rem 0 0 0;
     font-weight: 600;
+    line-height: 1.35;
+    margin: 1.75rem 0 0.5rem 0;
 }
 
 h1+h2,
@@ -36,21 +38,38 @@ h3+h6,
 h4+h5,
 h4+h6,
 h5+h6 {
-    margin: 0;
+    margin-top: 1rem;
 }
 
-h1:before { content: "# "; }
-h2:before { content: "## "; }
-h3:before { content: "### "; }
-h4:before { content: "#### "; }
-h5:before { content: "##### "; }
-h6:before { content: "###### "; }
+h1:before {
+    content: "# ";
+}
 
-h1:before, 
-h2:before, 
-h3:before, 
-h4:before, 
-h5:before, 
+h2:before {
+    content: "## ";
+}
+
+h3:before {
+    content: "### ";
+}
+
+h4:before {
+    content: "#### ";
+}
+
+h5:before {
+    content: "##### ";
+}
+
+h6:before {
+    content: "###### ";
+}
+
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
 h6:before {
     color: var(--bright-bg);
 }
@@ -66,11 +85,13 @@ p {
 
 /* Links */
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: var(--fg);
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     color: var(--bright-fg);
 }
 
@@ -102,34 +123,50 @@ ol li::marker {
 }
 
 dt {
-  margin: 0;
-  font-weight: bold;
+    margin: 0;
+    font-weight: bold;
 }
 
 dd {
-  margin: 0 0 0 1.5rem;
-  font-style: italic;
+    margin: 0 0 0 1.5rem;
+    font-style: italic;
 }
 
-dd + dt {
-  margin-top: 1.5rem;
+dd+dt {
+    margin-top: 1.5rem;
 }
 
 dl {
-  margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
 }
 
 /* Blockquotes */
 blockquote {
     position: relative;
-    margin: 0 0 1.5rem 1.5rem;
+    margin: 1.5rem 0;
+    padding: 0.85rem 1.25rem 0.85rem 2.25rem;
+    background-color: var(--dark-bg);
+    border-left: 4px solid var(--bright-black);
+    border-radius: 0 4px 4px 0;
+    color: var(--bright-bg);
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote p+p {
+    margin-top: 0.75rem;
 }
 
 blockquote::before {
     position: absolute;
-    left: -1.5rem;
+    left: 0.85rem;
+    top: 0.85rem;
     content: ">";
-    color: var(--bright-bg);
+    color: var(--bright-black);
+    font-weight: bold;
+    font-family: var(--font-monospace);
 }
 
 .twitter-tweet::before {
@@ -140,18 +177,188 @@ blockquote::before {
 
 /* Code */
 pre,
-code, 
+code,
 kbd,
 samp {
-    background: var(--dark-bg) !important;
+    background: var(--dark-bg);
     font-family: var(--font-monospace);
     color: var(--bright-bg);
 }
 
+code {
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+}
+
 pre {
     overflow-x: auto;
-    padding: 1.5rem;
+    padding: 1.25rem;
     margin: 0 0 1.5rem 0;
+    border-radius: 4px;
+}
+
+pre code {
+    padding: 0;
+    background: transparent !important;
+    color: inherit;
+}
+
+.highlight {
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.highlight pre {
+    margin-bottom: 0;
+}
+
+/* Authentic Gruvbox Dark Syntax Highlighting */
+.chroma,
+.chroma span {
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+.chroma {
+    background-color: var(--dark-bg);
+    color: var(--bright-bg);
+}
+
+/* Keywords: module, input, always, initial, begin, end, assign, if, reg */
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .nt {
+    color: #fb4934;
+}
+
+/* Keyword Type: wire, logic, int */
+.chroma .kt {
+    color: #fabd2f;
+}
+
+/* Comments: // and block comments */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+    color: #928374;
+    font-style: normal;
+}
+
+/* Strings: "program.mem", 'a' */
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+    color: #b8bb26;
+}
+
+/* Numbers: 31, 0, 159, 16 */
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo,
+.chroma .l,
+.chroma .ld {
+    color: #d3869b;
+}
+
+/* Builtins / Functions / System tasks: $readmemh, $display */
+.chroma .nb,
+.chroma .bp {
+    color: #fe8019;
+}
+
+.chroma .nf,
+.chroma .fm {
+    color: #8ec07c;
+}
+
+.chroma .na,
+.chroma .nc,
+.chroma .nd {
+    color: #fabd2f;
+}
+
+/* Variables & Constants */
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm {
+    color: #83a598;
+}
+
+.chroma .no {
+    color: #d3869b;
+}
+
+/* Operators: =, <=, +, @, :, , */
+.chroma .o,
+.chroma .ow {
+    color: #fe8019;
+}
+
+/* Punctuation: ;, (, ), [, ] */
+.chroma .p {
+    color: var(--bright-bg);
+}
+
+/* Identifier / Normal text */
+.chroma .n,
+.chroma .nx,
+.chroma .py {
+    color: var(--bright-bg);
+}
+
+/* Errors */
+.chroma .err,
+.chroma .gr,
+.chroma .gt {
+    color: #fb4934;
+    background-color: #3c1f1e;
+}
+
+/* Diff / Generic */
+.chroma .gd {
+    color: #fb4934;
+    background-color: #3c1f1e;
+}
+
+.chroma .gi {
+    color: #b8bb26;
+    background-color: #2d3b2d;
+}
+
+.chroma .gh {
+    color: #fabd2f;
+    font-weight: bold;
+}
+
+.chroma .gu {
+    color: #8ec07c;
+    font-weight: bold;
 }
 
 /* Emphasis */
@@ -180,31 +387,59 @@ hr:after {
 
 
 /* Prevent super/sub from affecting line height */
-sup, sub {
+sup,
+sub {
     vertical-align: baseline;
     position: relative;
     top: -0.25rem;
     font-size: unset;
 }
-sub { 
-    top: 0.25rem; 
+
+sub {
+    top: 0.25rem;
 }
 
 /* Tables */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
 table {
-    border-spacing: 0;
-    margin: 0 0 1.5rem 0;
-    overflow-wrap: anywhere;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-size: 0.925rem;
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
 }
-th, td {
-    padding: 0 .75rem;
-    vertical-align: top;
+
+.table-wrapper table {
+    margin: 0;
 }
-th:first-child, td:first-child {
-    padding-left: 0;
+
+th,
+td {
+    padding: 0.65rem 0.85rem;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
 }
+
 th {
-    text-align: inherit;
+    background-color: var(--dark-bg);
+    color: var(--fg);
+    font-weight: 600;
+}
+
+td {
+    color: var(--fg);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(29, 32, 33, 0.5);
 }
 
 /* Figures */
