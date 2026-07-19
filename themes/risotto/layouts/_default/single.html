@@ -1,6 +1,11 @@
 {{ define "main" }}
     <header class="content__header">
         <h1>{{ .Title | markdownify }}</h1>
+        {{ if and (not .Date.IsZero) (eq .Section "posts") }}
+        <div class="content__meta">
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ .Date.Format "02.01.2006" }}</time>
+        </div>
+        {{ end }}
     </header>
     <div class="content__body">
         {{ .Content }}
@@ -10,10 +15,9 @@
 
 {{define "aside" }}
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
-    {{ if or (.Params.author) (.Params.date) }}
+    {{ if .Params.author }}
         <p>
-            {{ if .Params.author }}By {{ .Params.author }}{{ if .Date }}, {{ end }}{{ end }}
-            {{ if .Date }}{{ .Date.Format "2006-01-02" }}{{ end }}
+            By {{ .Params.author }}
         </p>
     {{ end }}
 {{ end }}
